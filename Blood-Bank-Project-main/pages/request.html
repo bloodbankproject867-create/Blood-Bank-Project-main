@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blood Request</title>
+        <link rel="stylesheet" href="../assets/styles.css">
+    </head>
+    <body>
+    <header class="site-header glass">
+        <a class="brand" href="../index.html">🩸 BloodCare</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="donor.html">Become Donor</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="page">
+        <section class="card">
+            <h2>Emergency Blood Request</h2>
+            <p class="muted">Submit recipient details. Nearby donors will be notified instantly.</p>
+            <form>
+                <label>Patient Name<input placeholder="Patient full name"></label>
+                <label>Hospital<input placeholder="Hospital name"></label>
+                <label>Required Blood Group
+                    <select>
+                        <option>O+</option>
+                        <option>O-</option>
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                        </select></label>
+                    <label>Units Required<input type="number" min="1" max="8"></label>
+                    <label>Urgency
+                        <select>
+                            <option>Critical (within 2 hours)</option>
+                            <option>High (today)</option>
+                            <option>Normal (24+ hours)</option>
+                        </select></label>
+                        <button class="btn" type="button">Submit Request</button>
+                    </form>
+                </section>
+            </main>
+    </body>
+</html>
